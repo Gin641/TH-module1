@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 1</title>
+</head>
+<body>
+<script>
+    let mark = [2, 5, 7, 4, 8, 1, 9];
+    let max = findMax(mark);
+    function findMax(mark) {
+        let max = mark[0];
+        for (let i = 0; i < mark.length; i++) {
+            if (mark[i] > max) {
+                max = mark[i];
+            }
+        }
+        return max;
+    }
+    document.write("Điểm lớn nhất trong danh sách điểm thi là: " + max);
+</script>
+</body>
+</html>

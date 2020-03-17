@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 3</title>
+</head>
+<body>
+<script>
+    function isFibonacci(n) {
+        let one = 0;
+        let two = 1;
+        let sum;
+        while (one + two <= n){
+            sum = one + two;
+            one = two;
+            two = sum;
+        }
+        if (sum === n){
+            console.log(true);
+        }else {
+            console.log(false);
+        }
+    }
+    isFibonacci(5)
+</script>
+</body>
+</html>
